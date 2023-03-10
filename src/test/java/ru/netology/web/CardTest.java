@@ -41,7 +41,7 @@ public class CardTest {
         driver.findElement(By.className("button__text")).click();
 
         String expected = "  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
-        String actual = driver.findElement(By.tagName("p")).getText();
+        String actual = driver.findElement(By.data-test-id("order-success")).getText();
 
         assertEquals(expected, actual);
     }
