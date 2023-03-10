@@ -33,7 +33,7 @@ public class CardTest {
     }
 
     @Test
-    void shouldTestV1() throws InterruptedException {
+    void shouldTestV1() {
         driver.get("http://localhost:9999/");
         driver.findElement(By.cssSelector("input[type='text']")).sendKeys("Макарова Варвара");
         driver.findElement(By.cssSelector("input[type='tel']")).sendKeys("+79856543211");
